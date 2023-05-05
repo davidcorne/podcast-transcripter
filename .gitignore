@@ -1,3 +1,4 @@
+downloads/**
 # We don't want to save the mp3 files
 *.mp3
 
