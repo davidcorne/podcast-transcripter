@@ -18,8 +18,8 @@ const downloadMp3 = function(filename, link, success, errorFunction) {
 }
 
 const sanitiseFilename = function(filename) {
-    const sanitised = filename.replaceAll('/', '-')
-    return sanitised
+    const sanitised = filename.replaceAll('/', '-').replaceAll(' ', '_')
+    return sanitize(sanitised)
 }
 
 const errorHandler = function(error) {
