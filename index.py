@@ -155,5 +155,5 @@ def download_podcast_item(item):
     return file_path
 
 # Iterate over each entry in the feed
-# for entry in feed.entries:
-handle_podcast_item(feed.entries[0])
+for entry in feed.entries:
+    handle_podcast_item(entry)
